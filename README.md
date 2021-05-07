@@ -11,10 +11,17 @@ It looks fairly promising (warrenting further investigation):
 - Initial results (on MNIST and CIFAR-10) are good.
 - The model is capable of overfitting MNIST and CIFAR-10, suggesting that it might do well with larger, more varied datasets.
 
+## Patchless MLP-Mixer layer
+
 ![png](patchless-mixer.png)
+
+The above is a single patchless MLP-Mixer stye layer. The implementation below also multiplies the output representation by a learnable scalar, initialized to 0, meaning the initial state is the identify function. The number of these layers to use is a hyperparameter to be tuned.
+
+# Row-Column representation classifier
 
 ![png](row-col-classification.png)
 
+Note that MLP1 and MLP2 are unique networks, different from each other, and not the same as the ones in the diagram above.
 
 ```python
 import matplotlib.pyplot as plt
