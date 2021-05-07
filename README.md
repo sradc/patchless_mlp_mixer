@@ -2,7 +2,7 @@
 
 This is a preliminary exploration of an even simpler [MLP-Mixer](https://arxiv.org/abs/2105.01601) style architecture.
 
-The architecture:
+This architecture:
 - Uses image rows and columns directly, instead of image patches.
 - Uses a (novel?) classification method, heavily inspired by MLP-Mixer.
 - Enables deep models, with low parameter counts.
