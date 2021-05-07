@@ -15,7 +15,7 @@ It looks fairly promising (warrenting further investigation):
 
 ![png](patchless-mixer.png)
 
-The above is a single patchless MLP-Mixer stye layer. The implementation below also multiplies the output representation by a learnable scalar, initialized to 0, meaning the initial state is the identify function. The number of these layers to use is a hyperparameter to be tuned.
+The above is a single patchless MLP-Mixer stye layer. The implementation below also multiplies the output representation by a learnable scalar, initialized to 0, meaning the initial state is the identity function. The number of these layers to use is a hyperparameter to be tuned.
 
 # Row-Column representation classifier
 
