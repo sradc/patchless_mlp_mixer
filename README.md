@@ -179,7 +179,7 @@ test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 
 ## Autoencoder
 
-Note skip connections aren't used for the autoencoder, because they cause the network to be initialised as the identify function.
+Note skip connections aren't used for the autoencoder, because they cause the network to be initialised as the identity function.
 
 
 ```python
@@ -361,7 +361,7 @@ test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 
 ## Autoencoder
 
-Note skip connections aren't used for the autoencoder, because they cause the network to be initialised as the identify function.
+Note skip connections aren't used for the autoencoder, because they cause the network to be initialised as the identity function.
 
 
 ```python
