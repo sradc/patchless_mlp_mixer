@@ -5,7 +5,8 @@ This is a preliminary exploration of an even simpler [MLP-Mixer](https://arxiv.o
 This architecture:
 - Uses image rows and columns directly, instead of image patches.
 - Uses a (novel?) classification method, heavily inspired by MLP-Mixer.
-- Enables deep models, with low parameter counts.
+- Enables models to be deep.
+- Has a low parameter count, for relatively large images and depths.
 
 It looks fairly promising (warrenting further investigation):
 - Initial results (on MNIST and CIFAR-10) are good.
@@ -17,13 +18,19 @@ Would also be interesting to see how well it works for saliency, and object loca
 
 ![png](patchless-mixer.png)
 
-The above is a single patchless MLP-Mixer stye layer. The implementation below also multiplies the output representation by a learnable scalar, initialized to 0, meaning the initial state is the identity function. The number of these layers to use is a hyperparameter to be tuned.
+The above is a single patchless MLP-Mixer stye layer. 
+Note that the implementation multiplies the output representation by a learnable scalar,
+initialised to 0,
+before adding the input image to it,
+meaning that the function before training is the identity function
+(this isn't shown on the diagram).
+The number of these layers to use is a hyperparameter to be tuned.
 
 # Row-Column representation classifier
 
 ![png](row-col-classification.png)
 
-Note that MLP1 and MLP2 are unique networks, different from each other, and not the same as the ones in the diagram above.
+Note that MLP1 and MLP2 are unique networks, different from each other, (and not the same as the ones in the previous diagram).
 
 ```python
 import matplotlib.pyplot as plt
