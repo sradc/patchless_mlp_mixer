@@ -3,7 +3,7 @@
 This is a preliminary exploration of an even simpler [MLP-Mixer](https://arxiv.org/abs/2105.01601) style architecture.
 
 This architecture:
-- Uses image rows and columns directly, instead of image patches.
+- Uses image rows and columns directly, instead of [image patches -> tokens].
 - Uses a (novel?) classification method, heavily inspired by MLP-Mixer.
 - Enables models to be deep.
 - Has a low parameter count, for relatively large images and depths.
@@ -13,6 +13,15 @@ It looks fairly promising (warrenting further investigation):
 - The model is capable of overfitting MNIST and CIFAR-10, suggesting that it might do well with larger, more varied datasets.
 
 Would also be interesting to see how well it works for saliency, object localization, etc, since output has same dimension as input.
+
+Discussion of CIFAR-10 results:
+The model is trained from scratch on CIFAR-10, 
+and does worse than a CNN of similar parameter size would do.
+However, the architecture is less biased than a CNN, 
+so I hypothesize that it will work well
+if first pre-trained on much larger datasets (which was also the case for Mixer-MLP).
+
+I'm not currently set-up (in terms of hardware/VMs) to train on ImageNet size datasets, so watch this space.
 
 ## Patchless MLP-Mixer layer
 
