@@ -179,8 +179,9 @@ test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 
 ## Autoencoder
 
-Note skip connections aren't used for the autoencoder, because they cause the network to be initialised as the identity function.
-
+Note that skip connections are removed for the autoencoder model, 
+because they cause the model to be initialised as the identity function,
+(due to the initial 0 scalar gate), which would make the model trivially an autoencoder.
 
 ```python
 num_mix_layers = 2
@@ -361,7 +362,9 @@ test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 
 ## Autoencoder
 
-Note skip connections aren't used for the autoencoder, because they cause the network to be initialised as the identity function.
+Note that skip connections are removed for the autoencoder model, 
+because they cause the model to be initialised as the identity function,
+(due to the initial 0 scalar gate), which would make the model trivially an autoencoder.
 
 
 ```python
