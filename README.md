@@ -11,6 +11,8 @@ It looks fairly promising (warrenting further investigation):
 - Initial results (on MNIST and CIFAR-10) are good.
 - The model is capable of overfitting MNIST and CIFAR-10, suggesting that it might do well with larger, more varied datasets.
 
+Would also be interesting to see how well it works for saliency, and object localization.
+
 ## Patchless MLP-Mixer layer
 
 ![png](patchless-mixer.png)
