@@ -180,7 +180,7 @@ test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 ## Autoencoder
 
 Note that skip connections are removed for the autoencoder model, 
-because they cause the model to be initialised as the identity function,
+because they would cause the model to be initialised as the identity function,
 (due to the initial 0 scalar gate), which would make the model trivially an autoencoder.
 
 ```python
@@ -363,7 +363,7 @@ test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 ## Autoencoder
 
 Note that skip connections are removed for the autoencoder model, 
-because they cause the model to be initialised as the identity function,
+because they would cause the model to be initialised as the identity function,
 (due to the initial 0 scalar gate), which would make the model trivially an autoencoder.
 
 
