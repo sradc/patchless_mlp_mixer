@@ -127,8 +127,8 @@ class NdMixer(layers.Layer):
         self.nets = [Net(size, axis=i+1) for i, size in enumerate(outshape)] 
         self.gate = ScalarGate() if gate else lambda x: x
 
-    def __call__(self, input):
-        h = input
+    def call(self, inputs):
+        h = inputs
         for net in self.nets:
             h = net(h)
         return self.gate(h)
