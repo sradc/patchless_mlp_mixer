@@ -1,3 +1,6 @@
+**update**, 
+ moved to: [https://github.com/sradc/nd-mlp-mixer](nd-mlp-mixer)
+
 # Patchless MLP-Mixer
 
 This is a preliminary exploration of an even simpler [MLP-Mixer](https://arxiv.org/abs/2105.01601) style architecture.
