@@ -1,5 +1,5 @@
 **update**, 
- moved to: [https://github.com/sradc/nd-mlp-mixer](nd-mlp-https://github.com/sradc/nd-mlp-mixer)
+ moved to: [https://github.com/sradc/nd-mlp-mixer](https://github.com/sradc/nd-mlp-mixer)
 
 # Patchless MLP-Mixer
 
